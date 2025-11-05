@@ -3,6 +3,8 @@ package com.walmart.order_tracking.entity;
 import jakarta.persistence.*;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 /* @Index tells the database to create an index on one or more columns of the table.
@@ -37,6 +39,16 @@ public class Order {
     @Column(nullable = false)
     private Instant updatedAt;
 
+//    public List<OrderItem> getItems() {
+//        return items;
+//    }
+//
+//    public void setItems(List<OrderItem> items) {
+//        this.items = items;
+//    }
+
+//    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+//    private List<OrderItem> items = new ArrayList<>();
 
     @PrePersist
     void prePersist() {
