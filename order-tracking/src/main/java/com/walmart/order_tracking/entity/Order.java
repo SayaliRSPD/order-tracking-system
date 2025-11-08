@@ -39,16 +39,16 @@ public class Order {
     @Column(nullable = false)
     private Instant updatedAt;
 
-//    public List<OrderItem> getItems() {
-//        return items;
-//    }
-//
-//    public void setItems(List<OrderItem> items) {
-//        this.items = items;
-//    }
+    public List<OrderItem> getItems() {
+        return items;
+    }
 
-//    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private List<OrderItem> items = new ArrayList<>();
+    public void setItems(List<OrderItem> items) {
+        this.items = items;
+    }
+
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<OrderItem> items = new ArrayList<>();
 
     @PrePersist
     void prePersist() {

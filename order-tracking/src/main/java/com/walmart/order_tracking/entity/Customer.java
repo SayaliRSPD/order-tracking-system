@@ -21,12 +21,12 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY) //MySQL auto increment
     private Long id;
 
-    @NotBlank
+//    @NotBlank
     @Column(nullable = false)
     private String name;
 
     @Email
-    @NotBlank
+//    @NotBlank
     @Column(nullable = false, length = 320)
     private String email;
 
