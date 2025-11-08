@@ -33,6 +33,7 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
       <object connection-id="348c53be-119c-4bc8-8950-2079de1a2426" object-ref="consoles/Connection" />
+      <object connection-id="348c53be-119c-4bc8-8950-2079de1a2426" object-ref="schemas/orderdb/tables/customers" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
@@ -40,7 +41,11 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="348c53be-119c-4bc8-8950-2079de1a2426" dataset="orderdb.orders" active-filter-id="" />
-    <filter-actions connection-id="348c53be-119c-4bc8-8950-2079de1a2426" dataset="orderdb.customers" active-filter-id="" />
+    <filter-actions connection-id="348c53be-119c-4bc8-8950-2079de1a2426" dataset="orderdb.customers" active-filter-id="EMPTY_FILTER">
+      <filter id="419f179f-9531-4482-b4b8-c3026ae6e07c" name="Alice" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="name" operator="=" value="Alice" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
